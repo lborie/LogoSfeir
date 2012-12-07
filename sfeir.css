@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+	font-size: xx-large;
+	color: orange;
+}
+.positions{
+	position:absolute;
+	left : 50px;
+	top: 50px;
+}
+.sfeirL, .sfeirR {
+	opacity: 0;
+	color: white;
+    position: relative;
+	left:0px;
+	-webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+.sfeirL{
+	left: 10px;
+}
+.sfeirR{
+	left: -10px;
+}
+
+.bracketL, .bracketR{
+	position: relative;
+	left:0px;
+	-webkit-transition: left 1s ease;
+    -moz-transition: left 1s ease;
+    -o-transition: left 1s ease;
+    transition: left 1s ease;
+}
+
+.global:HOVER .sfeirL, .global:HOVER .sfeirR {
+	opacity: 1;
+}
+.global:HOVER .bracketL{
+	left: -40px;
+}
+.global:HOVER .bracketR{
+	left: 35px;
+}
